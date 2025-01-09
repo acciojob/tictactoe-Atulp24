@@ -6,8 +6,8 @@ let gameBoard = Array(9).fill(null);
 let isGameOver = false;
 
 document.getElementById("submit").addEventListener("click", function () {
-	player1 = document.getElementById("player-1").value;
-	player2 = document.getElementById("player-2").value;
+	player1 = document.getElementById("player1").value;
+	player2 = document.getElementById("player2").value;
 	if (player1 && player2) {
 		document.querySelector(".form").classList.add("hidden");
 		document.getElementById("game-board").classList.remove("hidden");
