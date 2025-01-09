@@ -28,7 +28,7 @@ document.querySelectorAll(".cell").forEach((cell) => {
             if (checkWinner()) {
               document.getElementById(
                 "turn-message"
-              ).textContent = `${currentPlayer}, congratulations you won!`;
+              ).textContent = `${currentPlayer === player1 ? 'Player1' : 'Player2'}, congratulations you won!`;
               isGameOver = true;
             } else if (gameBoard.every((cell) => cell !== null)) {
               document.getElementById("turn-message").textContent =
